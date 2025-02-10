@@ -1,0 +1,30 @@
+{% include "_header.html" %}
+
+<h1>Opskrifter</h1>
+<h2>Her findes opskrifter med ingredienslister</h2>
+
+<div class="gallery">
+  <div class="recipe">
+    <a href="/opskrifter/skagenslapper">
+      <img src="{{url_for("static", filename="imgs/skagenslapper.png")}}"
+      alt="Skagenslapper"/>
+    </a>
+    <p>Skagenslapper</p>
+  </div>
+  <div class="recipe">
+    <a href="/opskrifter/fødselsdagsboller">
+      <img src="{{url_for("static", filename="imgs/birthdaybuns.png")}}"
+      alt="Fødselsdagsboller" />
+    </a>
+    <p>Fødselsdagsboller</p>
+  </div>
+  <div class="recipe">
+    <a href="/opskrifter/naanbrød">
+      <img src="{{url_for("static", filename="imgs/naanbread.png")}}"
+      alt="Naanbrød" />
+    </a>
+    <p>Naanbrød</p>
+  </div>
+</div>
+
+{% include "_footer.html" %}
