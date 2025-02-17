@@ -35,4 +35,6 @@ def show_opskrifter_naanbread():
 def show_om_bageren():
     return render_template("about_us.html", title="Om bageren")
 
-    
+@app.get("/tilfældig-opskrift")
+def show_random_recipe():
+    return render_template("opskrifter_random_recipe.html", title="Tilfældig opskrift")
