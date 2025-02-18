@@ -46,7 +46,11 @@ def show_random_recipe():
 def get_posts():
     try:
         db, cursor = x.db()
-        q = "SELECT * FROM users"
+        q = """
+        SELECT posts.title, posts.note, users.user_name
+        FROM posts
+        JOIN users ON posts.user_fk = users.user_pk
+        """
         cursor.execute(q)
         rows = cursor.fetchall()
         ic(rows)

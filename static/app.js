@@ -57,8 +57,9 @@ async function getPosts() {
       console.log(post);
       html += `
       <div class="post">
-        <p>${post.user_pk}</p>
-        <p>${post.user_name}</p>
+        <h3>${post.title}</h3>
+        <p>${post.note}</p>
+        <p>Skrevet af ${post.user_name}</p>
       </div>
       `;
     });
@@ -67,5 +68,4 @@ async function getPosts() {
     console.error("Error:", error);
   }
 }
-
 getPosts();

@@ -27,16 +27,16 @@
 <div class="commentSection">
   <div>
     <h2>Skriv en kommentar</h2>
-    <input type="text" placeholder="Titel" />
-    <input type="text" placeholder="Kommentar" />
-    <button type="submit">Send</button>
+    <form action="">
+      <input type="text" placeholder="Titel" />
+      <input type="text" placeholder="Kommentar" />
+      <button type="submit">Send</button>
+    </form>
   </div>
   <div>
     <h2>Kommentarer</h2>
-    <p></p>
+    <div id="commentContainer"></div>
   </div>
 </div>
-
-<div id="commentContainer"></div>
 
 {% include "_footer.html" %}
